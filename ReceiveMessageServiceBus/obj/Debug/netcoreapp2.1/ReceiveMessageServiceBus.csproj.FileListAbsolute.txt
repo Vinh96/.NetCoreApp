@@ -1,0 +1,11 @@
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\bin\Debug\netcoreapp2.1\ReceiveMessageServiceBus.deps.json
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\bin\Debug\netcoreapp2.1\ReceiveMessageServiceBus.runtimeconfig.json
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\bin\Debug\netcoreapp2.1\ReceiveMessageServiceBus.runtimeconfig.dev.json
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\bin\Debug\netcoreapp2.1\ReceiveMessageServiceBus.dll
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.csproj.CoreCompileInputs.cache
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.AssemblyInfoInputs.cache
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.AssemblyInfo.cs
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\bin\Debug\netcoreapp2.1\ReceiveMessageServiceBus.pdb
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.dll
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.pdb
+D:\Projects\DemoApplication\ReceiveMessageServiceBus\obj\Debug\netcoreapp2.1\ReceiveMessageServiceBus.csprojAssemblyReference.cache

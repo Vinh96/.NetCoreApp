@@ -1,0 +1,15 @@
+D:\Projects\DemoApplication\WebAPITest\bin\Debug\netcoreapp2.1\WebAPITest.dll
+D:\Projects\DemoApplication\WebAPITest\bin\Debug\netcoreapp2.1\WebAPITest.deps.json
+D:\Projects\DemoApplication\WebAPITest\bin\Debug\netcoreapp2.1\WebAPITest.runtimeconfig.json
+D:\Projects\DemoApplication\WebAPITest\bin\Debug\netcoreapp2.1\WebAPITest.runtimeconfig.dev.json
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.csproj.CoreCompileInputs.cache
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.RazorAssemblyInfo.cache
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.RazorAssemblyInfo.cs
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.AssemblyInfoInputs.cache
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.AssemblyInfo.cs
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.RazorTargetAssemblyInfo.cache
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.dll
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.pdb
+D:\Projects\DemoApplication\WebAPITest\bin\Debug\netcoreapp2.1\WebAPITest.pdb
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\WebAPITest.csprojAssemblyReference.cache
+D:\Projects\DemoApplication\WebAPITest\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

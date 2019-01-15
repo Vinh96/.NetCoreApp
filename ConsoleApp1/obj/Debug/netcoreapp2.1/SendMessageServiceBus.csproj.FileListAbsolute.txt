@@ -1,0 +1,11 @@
+D:\Projects\DemoApplication\ConsoleApp1\bin\Debug\netcoreapp2.1\SendMessageServiceBus.deps.json
+D:\Projects\DemoApplication\ConsoleApp1\bin\Debug\netcoreapp2.1\SendMessageServiceBus.runtimeconfig.json
+D:\Projects\DemoApplication\ConsoleApp1\bin\Debug\netcoreapp2.1\SendMessageServiceBus.runtimeconfig.dev.json
+D:\Projects\DemoApplication\ConsoleApp1\bin\Debug\netcoreapp2.1\SendMessageServiceBus.dll
+D:\Projects\DemoApplication\ConsoleApp1\bin\Debug\netcoreapp2.1\SendMessageServiceBus.pdb
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.csproj.CoreCompileInputs.cache
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.AssemblyInfoInputs.cache
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.AssemblyInfo.cs
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.dll
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.pdb
+D:\Projects\DemoApplication\ConsoleApp1\obj\Debug\netcoreapp2.1\SendMessageServiceBus.csprojAssemblyReference.cache
