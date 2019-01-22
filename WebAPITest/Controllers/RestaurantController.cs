@@ -20,26 +20,20 @@ namespace WebAPITest.Controllers
     {
         private readonly IMapper _mapper;
         private IRestaurantService _restaurantService;
-        private IReviewService _reviewService;
-        private RestaurantDbContext _context; 
-        public RestaurantController( IMapper mapper, IRestaurantService restaurantService,IReviewService reviewService,RestaurantDbContext context)
+        public RestaurantController( IMapper mapper, IRestaurantService restaurantService)
         {
             _mapper = mapper;
             _restaurantService = restaurantService;
-            _reviewService = reviewService;
-            _context = context;
         }
 
         [HttpGet()]
         public async Task<ActionResult<IEnumerable<Restaurant>>> getRestaurants()
         {
             var restaurantList = await _restaurantService.GetAllRestaurantObject();
-            var restaurants = _mapper.Map<List<RestaurantDto>>(restaurantList);
-            //var result = from r in _context.Restaurants
-            //             select r;
-            // var sql = ((System.Data.Entity.Core.Objects.ObjectQuery)result).ToTraceString();
+     
 
-            return Ok(restaurants);
+
+            return Ok(restaurantList);
 
         }
         [HttpGet("{id}")]
@@ -55,11 +49,7 @@ namespace WebAPITest.Controllers
             }
             return Ok(result);
         }
-        [HttpGet("{restaurantId}/reviews")]
-        public async Task<ActionResult<IEnumerable<Review>>> getReviews (int restaurantId){
-            var reviewList = await _reviewService.GetRestaurantReviews(restaurantId);
-            return Ok(reviewList);
-        }
+      
         [HttpPost]
         public async Task<ActionResult<Restaurant>> createRestaurant([FromBody]Restaurant restaurant)
         {

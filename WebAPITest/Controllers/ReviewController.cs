@@ -24,5 +24,11 @@ namespace WebAPITest.Controllers
             await _service.CreateAsync(review);
             return Ok(review);
         }
+        [HttpGet("{restaurantId}/reviews")]
+        public async Task<ActionResult<IEnumerable<Review>>> getReviews(int restaurantId)
+        {
+            var reviewList = await _service.GetRestaurantReviews(restaurantId);
+            return Ok(reviewList);
+        }
     }
 }

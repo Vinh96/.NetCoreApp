@@ -1,20 +1,20 @@
-using System;
 using System.Threading.Tasks;
-using Xunit;
-using Moq;
-using WebAPITest.Repo;
 using System.Collections.Generic;
 using WebAPITest.Entities;
 using WebAPITest.Controllers;
 using AutoMapper;
 using WebAPITest.Models;
+using Moq;
+using NUnit.Framework;
+using WebAPITest.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace test
 {
+    [TestFixture]
     public class UnitTest1
     {
-        [Fact]
+        [Test]
         public async Task ApiReturnListOfRestaunts() 
         {
             var mockMapper = new MapperConfiguration(cfg =>
@@ -23,15 +23,15 @@ namespace test
             });
             var mapper = mockMapper.CreateMapper();
             //Arrange
-            var mockRepo = new Mock<IRestaurantRepo>();
-            mockRepo.Setup(repo => repo.getRestaurants())
+            var mockRepo = new Mock<IRestaurantService>();
+            mockRepo.Setup(repo => repo.GetAll())
                 .ReturnsAsync(GetTestSession());
             var controller = new RestaurantController(mapper, mockRepo.Object);
 
             //Act 
             var result = await controller.getRestaurants();
-            //Assert 
-            var type = Assert.IsType<OkObjectResult>(result.Result);
+            Assert.IsAssignableFrom<IEnumerable<RestaurantDto>>(result.Result);
+        
             
         }
         private List<Restaurant> GetTestSession() {
@@ -40,7 +40,7 @@ namespace test
             {
                 Id = 1,
                 Name ="Pizza Hut",
-                Description ="Pizza"
+                Description ="Pizza",
 
             });
             session.Add(new Restaurant()
@@ -52,5 +52,6 @@ namespace test
             });
             return session;
         }
+        
     }
 }

@@ -6,7 +6,7 @@ using WebAPITest.Entities;
 
 namespace WebAPITest.Repo
 {
-    interface IReviewRepo : IRepositoryBase<Review>
+   public interface IReviewRepo : IRepositoryBase<Review>
     {
     }
 }
