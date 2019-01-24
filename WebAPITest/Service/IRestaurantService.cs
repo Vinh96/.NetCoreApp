@@ -10,6 +10,6 @@ namespace WebAPITest.Service
     public interface IRestaurantService : IBaseService<Restaurant>
     {
         Task<Restaurant> GetById(int Id);
-        Task<IEnumerable<RestaurantDto>> GetAllRestaurantObject();
+        Task<IEnumerable<Restaurant>> GetAllRestaurantObject();
     }
 }

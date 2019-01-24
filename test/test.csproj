@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebAPITest\WebAPITest.csproj" />
+    <ProjectReference Include="..\WebAPITest\WebAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

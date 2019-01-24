@@ -3,8 +3,6 @@ D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\test.runtimeconfig.json
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\test.runtimeconfig.dev.json
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\test.dll
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\test.pdb
-D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\WebAPITest.dll
-D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\WebAPITest.pdb
 D:\Projects\DemoApplication\test\obj\Debug\netcoreapp2.1\test.csprojAssemblyReference.cache
 D:\Projects\DemoApplication\test\obj\Debug\netcoreapp2.1\test.csproj.CoreCompileInputs.cache
 D:\Projects\DemoApplication\test\obj\Debug\netcoreapp2.1\test.AssemblyInfoInputs.cache
@@ -15,3 +13,5 @@ D:\Projects\DemoApplication\test\obj\Debug\netcoreapp2.1\test.pdb
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
 D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\WebAPI.dll
+D:\Projects\DemoApplication\test\bin\Debug\netcoreapp2.1\WebAPI.pdb

@@ -1,7 +1,3 @@
-networks:
-  default:
-    external:
-      name: nat
 services:
   webapitest:
     build:
@@ -9,6 +5,7 @@ services:
       dockerfile: WebAPITest/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '44307'
       ASPNETCORE_URLS: https://+:443;http://+:80
     image: webapitest
     ports:
@@ -17,6 +14,6 @@ services:
     - published: 44307
       target: 443
     volumes:
-    - C:\Users\vinhton\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-    - C:\Users\vinhton\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\vinhton\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\vinhton\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
 version: '3.4'

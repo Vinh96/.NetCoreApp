@@ -13071,9 +13071,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPITest.csproj",
-      "projectName": "WebAPITest",
-      "projectPath": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPITest.csproj",
+      "projectUniqueName": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\vinhton\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\DemoApplication\\WebAPITest\\obj\\",
       "projectStyle": "PackageReference",

@@ -23,15 +23,14 @@ namespace WebAPITest.Service
            var result= await GetByCondition(q => q.Id.Equals(Id));
             return result.FirstOrDefault();
         }
-        public async Task<IEnumerable<RestaurantDto>> GetAllRestaurantObject() {
-            var restaurants = await GetAllQuery().Select(p => new RestaurantDto
+        public async Task<IEnumerable<Restaurant>> GetAllRestaurantObject() {
+            var restaurants = await GetAllQuery().Select(p => new Restaurant
             {
                 Id = p.Id,
                 Name = p.Name,
                 FoundedDate = p.FoundedDate,
                 Description = p.Description,
                 Reviews = p.Reviews.Where(r => r.Body != null),
-                NumberOfReviews = p.Reviews.Count() 
             }).ToListAsync();
 
             return restaurants;

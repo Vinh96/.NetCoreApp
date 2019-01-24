@@ -5273,7 +5273,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "WebAPITest/1.0.0": {
+      "WebAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -5285,10 +5285,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.1.2"
         },
         "compile": {
-          "bin/placeholder/WebAPITest.dll": {}
+          "bin/placeholder/WebAPI.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebAPITest.dll": {}
+          "bin/placeholder/WebAPI.dll": {}
         }
       }
     }
@@ -14289,10 +14289,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "WebAPITest/1.0.0": {
+    "WebAPI/1.0.0": {
       "type": "project",
-      "path": "../WebAPITest/WebAPITest.csproj",
-      "msbuildProject": "../WebAPITest/WebAPITest.csproj"
+      "path": "../WebAPITest/WebAPI.csproj",
+      "msbuildProject": "../WebAPITest/WebAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14304,7 +14304,7 @@
       "Moq >= 4.10.1",
       "NUnit >= 3.11.0",
       "NUnit3TestAdapter >= 3.12.0",
-      "WebAPITest >= 1.0.0"
+      "WebAPI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14337,8 +14337,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPITest.csproj": {
-              "projectPath": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPITest.csproj"
+            "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPI.csproj": {
+              "projectPath": "D:\\Projects\\DemoApplication\\WebAPITest\\WebAPI.csproj"
             }
           }
         }

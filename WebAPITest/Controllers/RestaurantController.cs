@@ -27,17 +27,15 @@ namespace WebAPITest.Controllers
         }
 
         [HttpGet()]
-        public async Task<ActionResult<IEnumerable<Restaurant>>> getRestaurants()
+        public async Task<ActionResult<IEnumerable<RestaurantDto>>> getRestaurants()
         {
             var restaurantList = await _restaurantService.GetAllRestaurantObject();
-     
-
-
-            return Ok(restaurantList);
+            var result = _mapper.Map<List<RestaurantDto>>(restaurantList);   
+            return Ok(result);
 
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Restaurant>> getRestaurant(int id)
+        public async Task<ActionResult<RestaurantDto>> getRestaurant(int id)
         {
 
             var item = await _restaurantService.GetById(id);
@@ -51,14 +49,17 @@ namespace WebAPITest.Controllers
         }
       
         [HttpPost]
-        public async Task<ActionResult<Restaurant>> createRestaurant([FromBody]Restaurant restaurant)
+        public async Task<ActionResult<RestaurantDto>> createRestaurant([FromBody]Restaurant restaurant)
         {
             try
             {
                 if (!ModelState.IsValid)
+                {
                     return BadRequest(ModelState);
+
+                }   
                 await _restaurantService.CreateAsync(restaurant);
-                return CreatedAtAction("getRestaurant", new { id = restaurant.Id }, restaurant);
+                return CreatedAtAction("getRestaurants", restaurant);
             }
             catch (Exception ex)
             {
@@ -67,10 +68,12 @@ namespace WebAPITest.Controllers
           
         }
         [HttpPut("{id}")]
-        public async Task<ActionResult<Restaurant>> editRestaurant([FromBody]Restaurant restaurant,int id) {
+        public async Task<ActionResult<RestaurantDto>> editRestaurant([FromBody]Restaurant restaurant,int id) {
             var currentRestaurant = await _restaurantService.GetById(id);
+            if (currentRestaurant == null) {
+                return NotFound();
+            }
             _mapper.Map(restaurant, currentRestaurant);
-            currentRestaurant.JsonData = JsonConvert.SerializeObject(currentRestaurant.JsonData);
             await _restaurantService.UpdateAsync(currentRestaurant);
             return Ok(currentRestaurant);
         }
